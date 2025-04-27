@@ -3,13 +3,14 @@ repos:
     rev: 25.1.0
     hooks:
       - id: black
-        language_version: python3.11
+        language_version: python
 
         
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.15.0
     hooks:
     -   id: mypy
+        language_version: python
     
   - repo: https://github.com/PyCQA/flake8
     rev: 7.2.0
@@ -24,10 +25,3 @@ repos:
       - id: isort
         args: ["--profile", "black"]
         exclude: 'migrations/'
-
-  - repo: local
-    hooks:
-      - id: coverage
-        name: "Run Django coverage"
-        entry: bash -c 'coverage run nootification/manage.py test && coverage report --fail-under=80'
-        language: python

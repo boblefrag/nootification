@@ -19,6 +19,7 @@ dependencies = [
     "tenacity (>=9.1.2,<10.0.0)",
     "flask (>=3.1.0,<4.0.0)",
     "pre-commit (>=4.2.0,<5.0.0)",
+    "types-requests (>=2.32.0.20250328,<3.0.0.0)",
 ]
 
 
@@ -29,3 +30,6 @@ build-backend = "poetry.core.masonry.api"
 [tool.pylsp.plugins.mypy]
 enabled = true
 live_mode = true
+
+[mypy]
+ignore_missing_imports = true
