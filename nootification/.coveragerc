@@ -1,0 +1,9 @@
+[run]
+source = alerts, stores, messages
+
+[report]
+omit =
+    */migrations/*
+    */tests/*
+    manage.py
+    */settings.py
