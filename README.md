@@ -43,6 +43,20 @@ a more scalable solution would be preferred, such as RabbitMQ or Kafka
 
 ### Receiving an alert
 
+Alerts are received on `POST /webhooks/alerts/`
+
+with a payload format like:
+
+```json
+{
+  "url": "https://media.veesion.io/b36006d7-adfa-4f3c-a56c-addcb4e4f95d.mp4",
+  "location": "fr-auchan-larochelle",
+  "alert_uuid": "33cbb18c-3e9d-4acc-9667-2fbe7bf29137",
+  "label": "theft",
+  "time_spotted": 1742470260.083
+}
+```
+
 When an alert is received it's validated and saved in DB. The `save`
 method trigger the `publish` function from the `message` app. That
 take care of creating the payload and send it to the revelant users.
@@ -91,11 +105,21 @@ coverage run manage.py test && coverage report
 
 ### Run the end to end tests
 
-As nootification relies on 3 parts:
+Nootification relies on 3 parts:
 
 - The django application
 - The redis queue
 - A Flask service to answer messages
+
+You'll need a functioning database configuration for PostgreSQL 
+cf. https://docs.djangoproject.com/en/5.2/ref/databases/#postgresql-connection-settings
+
+First install the initial data with :
+
+```bash
+cd nootification
+./manage.py loaddata initial_data.json
+```
 
 to launch the django application run:
 
@@ -123,3 +147,37 @@ With another termainl (The last!)
 python e2e.py
 ```
 
+## Why is it reliabale ?
+
+The system is tested both functionaly and end to end. To get
+enterprise grade we should add strong monitoring on the queue system.
+
+## Why is it Scalable ?
+
+Both the Django application and the queue system can be distributed
+amongst as many server as needed. In professional usage the Queue
+system could be switched to something more robust than RQ.
+
+## Exensibility
+
+
+Sending a message use the `MessageSender` base class that allow to add
+other senders to do so. If we wanted to add support for SMS and email
+we should do the floowing:
+
+- change `get_location_recipients` to return not only the `user_uuid`
+  but also the `email`and `tel` field:
+  
+  ```python
+  list(recipients.values('user_uuid', 'email', 'tel'))
+  ```
+- change `publish` to correctly fill the payload: 
+ 
+ 
+ ```python
+ for user in recipients:
+    payload = {"target_user_uuid": str(user['user_uuid'])}
+ ```
+
+- call the correct backend depending on environment variable, settings
+  or user preferences depending on the decision we choose.

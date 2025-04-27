@@ -1,5 +1,5 @@
 [project]
-name = "veesion"
+name = "nootification"
 version = "0.1.0"
 description = ""
 authors = [
@@ -22,10 +22,11 @@ dependencies = [
     "types-requests (>=2.32.0.20250328,<3.0.0.0)",
 ]
 
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+package-mode = false
+
 
 [tool.pylsp.plugins.mypy]
 enabled = true

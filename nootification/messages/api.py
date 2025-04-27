@@ -2,11 +2,12 @@ import logging
 from urllib.parse import urljoin
 
 import django_rq
-import requests  # type: ignore
 from alerts.api import get_alert
 from django.conf import settings
 from stores.api import get_location_recipients
 from tenacity import retry, retry_if_not_exception_type, stop_after_attempt, wait_fixed
+
+from .services import HttpMessageSender
 
 logger = logging.getLogger("notifications")
 
@@ -30,19 +31,10 @@ def send_notification(payload):
     Retries are logged as warnings, and errors are logged as errors. In production, a monitoring
     system would alert us if repeated failures happen on the client webhook.
     """
-
-    url = urljoin(settings.THIRD_SERVICE, "/webhook/notifications/")
-    logger.info(url)
-    try:
-        response = requests.post(url, json=payload)
-        response.raise_for_status()
-    except requests.exceptions.HTTPError as e:
-        logger.warn(f"HTTPError while sending notification: {e}")
-        if 400 <= e.response.status_code < 500:
-            logger.error(f"HTTPError while sending notification: {e}")
-            raise ClientError(e)
-        else:
-            raise
+    http_sender = HttpMessageSender(
+        webhook_url=urljoin(settings.THIRD_SERVICE, "/webhook/notifications/")
+    )
+    http_sender.send_message(payload)
 
 
 def publish(alert_id):
