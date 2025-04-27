@@ -1,0 +1,114 @@
+[
+  { "model": "stores.company", "pk": 1, "fields": { "location": "Carrefour" } },
+  { "model": "stores.company", "pk": 2, "fields": { "location": "Leclerc" } },
+  { "model": "stores.company", "pk": 3, "fields": { "location": "Auchan" } },
+  { "model": "stores.company", "pk": 4, "fields": { "location": "Intermarché" } },
+  { "model": "stores.company", "pk": 5, "fields": { "location": "Monoprix" } },
+  { "model": "stores.company", "pk": 6, "fields": { "location": "Super U" } },
+  { "model": "stores.company", "pk": 7, "fields": { "location": "Casino" } },
+  { "model": "stores.company", "pk": 8, "fields": { "location": "Franprix" } },
+  { "model": "stores.company", "pk": 9, "fields": { "location": "Cora" } },
+  { "model": "stores.company", "pk": 10, "fields": { "location": "Carrefour Market" } },
+
+  { "model": "stores.storeuser", "pk": 1, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_0_0", "first_name": "", "last_name": "", "email": "user_0_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000001", "company": 1, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 2, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_0_1", "first_name": "", "last_name": "", "email": "user_0_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000002", "company": 1, "level": "standard", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 3, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_0_2", "first_name": "", "last_name": "", "email": "user_0_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000003", "company": 1, "level": "critical", "groups": [], "user_permissions": [] } },
+
+  { "model": "stores.storeuser", "pk": 4, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_1_0", "first_name": "", "last_name": "", "email": "user_1_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000004", "company": 2, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 5, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_1_1", "first_name": "", "last_name": "", "email": "user_1_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000005", "company": 2, "level": "standard", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 6, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_1_2", "first_name": "", "last_name": "", "email": "user_1_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000006", "company": 2, "level": "critical", "groups": [], "user_permissions": [] } },
+
+    { "model": "stores.storeuser", "pk": 7, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_2_0", "first_name": "", "last_name": "", "email": "user_2_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000007", "company": 3, "level": "critical", "groups": [], "user_permissions": [] } },
+
+{ "model": "stores.storeuser", "pk": 8, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_2_1", "first_name": "", "last_name": "", "email": "user_2_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000008", "company": 3, "level": "standard", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 9, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_2_2", "first_name": "", "last_name": "", "email": "user_2_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000009", "company": 3, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 10, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_3_0", "first_name": "", "last_name": "", "email": "user_3_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000010", "company": 4, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 11, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_3_1", "first_name": "", "last_name": "", "email": "user_3_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000011", "company": 4, "level": "standard", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 12, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_3_2", "first_name": "", "last_name": "", "email": "user_3_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000012", "company": 4, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 13, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_4_0", "first_name": "", "last_name": "", "email": "user_4_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000013", "company": 5, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 14, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_4_1", "first_name": "", "last_name": "", "email": "user_4_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000014", "company": 5, "level": "standard", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 15, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_4_2", "first_name": "", "last_name": "", "email": "user_4_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000015", "company": 5, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 16, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_5_0", "first_name": "", "last_name": "", "email": "user_5_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000016", "company": 6, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 17, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_5_1", "first_name": "", "last_name": "", "email": "user_5_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000017", "company": 6, "level": "standard", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 18, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_5_2", "first_name": "", "last_name": "", "email": "user_5_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000018", "company": 6, "level": "critical", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 19, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_6_0", "first_name": "", "last_name": "", "email": "user_6_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000019", "company": 7, "level": "critical", "groups": [], "user_permissions": [] } },
+    { "model": "stores.storeuser", "pk": 20, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_6_1", "first_name": "", "last_name": "", "email": "user_6_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000020", "company": 7, "level": "standard", "groups": [], "user_permissions": [] } },
+
+    { "model": "stores.storeuser", "pk": 21, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_7_0", "first_name": "", "last_name": "", "email": "user_7_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000021", "company": 8, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 22, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_7_1", "first_name": "", "last_name": "", "email": "user_7_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000022", "company": 8, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 23, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_7_2", "first_name": "", "last_name": "", "email": "user_7_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000023", "company": 8, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 24, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_8_0", "first_name": "", "last_name": "", "email": "user_8_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000024", "company": 9, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 25, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_8_1", "first_name": "", "last_name": "", "email": "user_8_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000025", "company": 9, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 26, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_8_2", "first_name": "", "last_name": "", "email": "user_8_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000026", "company": 9, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 27, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_9_0", "first_name": "", "last_name": "", "email": "user_9_0@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000027", "company": 10, "level": "both", "groups": [], "user_permissions": [] } },
+  { "model": "stores.storeuser", "pk": 28, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_9_1", "first_name": "", "last_name": "", "email": "user_9_1@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000028", "company": 10, "level": "both", "groups": [], "user_permissions": [] } },
+    { "model": "stores.storeuser", "pk": 29, "fields": { "password": "pbkdf2_sha256$260000$examplehash", "last_login": null, "is_superuser": false, "username": "user_9_2", "first_name": "", "last_name": "", "email": "user_9_2@example.com", "is_staff": false, "is_active": true, "date_joined": "2025-01-01T00:00:00Z", "user_uuid": "00000000-0000-0000-0000-000000000029", "company": 10, "level": "both", "groups": [], "user_permissions": [] } },
+
+    {
+    "model": "alerts.alert",
+    "pk": 1,
+    "fields": {
+      "url": "https://example.com/alert/1",
+      "location": 1,
+      "alert_uuid": "00000000-0000-0000-0000-000000000001",
+      "label": "Theft",
+      "time_spotted": "2025-04-01T14:30:00Z"
+    }
+  },
+  {
+    "model": "alerts.alert",
+    "pk": 2,
+    "fields": {
+      "url": "https://example.com/alert/2",
+      "location": 2,
+      "alert_uuid": "00000000-0000-0000-0000-000000000002",
+      "label": "Suspicious",
+      "time_spotted": "2025-04-02T10:15:00Z"
+    }
+  },
+  {
+    "model": "alerts.alert",
+    "pk": 3,
+    "fields": {
+      "url": "https://example.com/alert/3",
+      "location": 3,
+      "alert_uuid": "00000000-0000-0000-0000-000000000003",
+      "label": "Normal",
+      "time_spotted": "2025-04-03T09:45:00Z"
+    }
+  },
+  {
+    "model": "alerts.alert",
+    "pk": 4,
+    "fields": {
+      "url": "https://example.com/alert/4",
+      "location": 4,
+      "alert_uuid": "00000000-0000-0000-0000-000000000004",
+      "label": "Theft",
+      "time_spotted": "2025-04-04T16:00:00Z"
+    }
+  },
+  {
+    "model": "alerts.alert",
+    "pk": 5,
+    "fields": {
+      "url": "https://example.com/alert/5",
+      "location": 5,
+      "alert_uuid": "00000000-0000-0000-0000-000000000005",
+      "label": "Suspicious",
+      "time_spotted": "2025-04-05T12:30:00Z"
+    }
+  },
+  {
+    "model": "alerts.alert",
+    "pk": 6,
+    "fields": {
+      "url": "https://example.com/alert/6",
+      "location": 6,
+      "alert_uuid": "00000000-0000-0000-0000-000000000006",
+      "label": "Normal",
+      "time_spotted": "2025-04-06T08:00:00Z"
+    }
+  }
+
+]
